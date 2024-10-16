@@ -6,12 +6,12 @@ export interface Message extends Document {
 }
 
 export interface User extends Document {
-    userName : string;
+    username : string;
     email : string;
     password : string;
     verifyCode : string;
     verifyCodeExpiry : Date;
-    isVerrified : boolean;
+    isVerified : boolean;
     isAcceptingMessage : boolean;
     messages : Message[]   
 }
@@ -30,7 +30,7 @@ const MessageSchema : Schema<Message> = new Schema({
 })
 
 const UserSchema : Schema<User> = new Schema({
-    userName : {
+    username : {
         type : String,
         required : [true , 'username is required'],
         trim : true,
@@ -54,7 +54,7 @@ const UserSchema : Schema<User> = new Schema({
         type : Date,
         required : true
     },
-    isVerrified : {
+    isVerified : {
         type : Boolean,
         default : false
     },
