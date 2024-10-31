@@ -16,7 +16,7 @@ export default function Component() {
       Not signed in <br />
       <button 
         onClick={() => signIn()}
-        className="border border-black p-2 rounded-lg  text-white bg-gradient-to-t from-indigo-800 to-blue-500 ml-3"
+        className="border border-black p-2 rounded-lg   text-white bg-gradient-to-t from-indigo-800 to-blue-500 ml-3"
       >
         Sign in
       </button>
